@@ -1,0 +1,15 @@
+def alphabet_position(text):
+    al="abcdefghijklmnopqrstuvwxyz"
+    os=[]
+    final=[]
+    text=text.lower()
+    for i in text:
+        if i.isalpha()== True:
+            os.append(i)
+    for i in os:
+        for j in al:
+            if i==j:
+                final.append(str(al.find(j)+1))
+            else:
+                pass
+    return " ".join(final)
